@@ -1,4 +1,4 @@
-# BBMarkdown
+# RubiParser
 Swift [Ruby character](https://en.wikipedia.org/wiki/Ruby_character) parser for NHK Easy News flavored HTML.
 
 ## Installation
