@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A25BDC0F1E084BA0009EA638"
+               BlueprintIdentifier = "A2B0C8141E0A8A26002A5AE7"
                BuildableName = "RubiParser.framework"
                BlueprintName = "RubiParser watchOS"
                ReferencedContainer = "container:RubiParser.xcodeproj">
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A25BDC171E084BA0009EA638"
-               BuildableName = "RubiParser watchOS Tests.xctest"
-               BlueprintName = "RubiParser watchOS Tests"
-               ReferencedContainer = "container:RubiParser.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A25BDC0F1E084BA0009EA638"
-            BuildableName = "RubiParser.framework"
-            BlueprintName = "RubiParser watchOS"
-            ReferencedContainer = "container:RubiParser.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A25BDC0F1E084BA0009EA638"
+            BlueprintIdentifier = "A2B0C8141E0A8A26002A5AE7"
             BuildableName = "RubiParser.framework"
             BlueprintName = "RubiParser watchOS"
             ReferencedContainer = "container:RubiParser.xcodeproj">
@@ -82,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A25BDC0F1E084BA0009EA638"
+            BlueprintIdentifier = "A2B0C8141E0A8A26002A5AE7"
             BuildableName = "RubiParser.framework"
             BlueprintName = "RubiParser watchOS"
             ReferencedContainer = "container:RubiParser.xcodeproj">
