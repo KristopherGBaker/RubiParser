@@ -3,6 +3,8 @@ Swift [Ruby character](https://en.wikipedia.org/wiki/Ruby_character) parser for 
 
 [![Build Status](https://travis-ci.org/KristopherGBaker/RubiParser.svg?branch=master)](https://travis-ci.org/KristopherGBaker/RubiParser)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/RubiParser.svg)](https://img.shields.io/cocoapods/v/RubiParser.svg)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Platform](https://img.shields.io/cocoapods/p/RubiParser.svg?style=flat)](http://cocoadocs.org/docsets/RubiParser)
 
 ## Installation
 
