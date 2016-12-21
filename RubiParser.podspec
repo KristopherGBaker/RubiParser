@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "RubiParser"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Ruby Character Parser"
 
   s.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/KristopherGBaker/RubiParser.git", :tag => "#{s.version}" }
 
-  s.source_files  = "RubiParser/RubiParser/**/*.swift"
+  s.source_files  = "RubiParser/**/*.swift"
   s.requires_arc = true
 
 end
