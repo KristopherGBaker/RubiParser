@@ -64,6 +64,10 @@ public class RubiScannerParser: RubiParser {
     /// Character set containing whitespaces, newlines, and the less than character.
     private let whitespaceLessThan = CharacterSet.whitespacesAndNewlines.union(CharacterSet(charactersIn: "<"))
     
+    /// Initializes the parser.
+    public init() {
+    }
+    
     /**
      Parses the specified html string into a RubiDocument.
      

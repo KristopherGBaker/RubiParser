@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "RubiParser"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Ruby Character Parser"
 
   s.description  = <<-DESC
