@@ -31,6 +31,20 @@
 		A25BDC081E084A9B009EA638 /* RubiParserExtensionTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22E3FF11E0806C500959FC7 /* RubiParserExtensionTestCase.swift */; };
 		A25BDC091E084A9B009EA638 /* RubiParserTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22E3FEF1E066F2100959FC7 /* RubiParserTestCase.swift */; };
 		A25BDC0A1E084A9B009EA638 /* XCTestCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266A1481E05599F006ACF19 /* XCTestCaseExtension.swift */; };
+		A25BDC191E084BA0009EA638 /* RubiParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25BDC101E084BA0009EA638 /* RubiParser.framework */; };
+		A25BDC271E084BDA009EA638 /* NSScanner+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266A1461E0551C4006ACF19 /* NSScanner+Swift.swift */; };
+		A25BDC281E084BDA009EA638 /* RubiDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22E3FF51E0810DA00959FC7 /* RubiDocument.swift */; };
+		A25BDC291E084BDA009EA638 /* RubiNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22E3FF71E0810F700959FC7 /* RubiNode.swift */; };
+		A25BDC2A1E084BDA009EA638 /* RubiParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266A1401E054AE2006ACF19 /* RubiParser.swift */; };
+		A25BDC2B1E084BF6009EA638 /* EasyNews1.html in Resources */ = {isa = PBXBuildFile; fileRef = A266A1421E054B83006ACF19 /* EasyNews1.html */; };
+		A25BDC2C1E084BF6009EA638 /* EasyNews1Full.html in Resources */ = {isa = PBXBuildFile; fileRef = A22E3FE91E056BCA00959FC7 /* EasyNews1Full.html */; };
+		A25BDC2D1E084BF6009EA638 /* RubiDocumentEquatableTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22E3FF91E08126600959FC7 /* RubiDocumentEquatableTestCase.swift */; };
+		A25BDC2E1E084BF6009EA638 /* RubiDocumentExtensionTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22E3FF31E0808EB00959FC7 /* RubiDocumentExtensionTestCase.swift */; };
+		A25BDC2F1E084BF6009EA638 /* RubiDocumentTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22E3FED1E066EDA00959FC7 /* RubiDocumentTestCase.swift */; };
+		A25BDC301E084BF6009EA638 /* RubiNodeEquatableTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22E3FFB1E0813DC00959FC7 /* RubiNodeEquatableTestCase.swift */; };
+		A25BDC311E084BF6009EA638 /* RubiParserExtensionTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22E3FF11E0806C500959FC7 /* RubiParserExtensionTestCase.swift */; };
+		A25BDC321E084BF6009EA638 /* RubiParserTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22E3FEF1E066F2100959FC7 /* RubiParserTestCase.swift */; };
+		A25BDC331E084BF6009EA638 /* XCTestCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266A1481E05599F006ACF19 /* XCTestCaseExtension.swift */; };
 		A266A1301E054AC4006ACF19 /* RubiParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A266A1261E054AC4006ACF19 /* RubiParser.framework */; };
 		A266A1371E054AC4006ACF19 /* RubiParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A266A1291E054AC4006ACF19 /* RubiParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A266A1411E054AE2006ACF19 /* RubiParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266A1401E054AE2006ACF19 /* RubiParser.swift */; };
@@ -45,6 +59,13 @@
 			containerPortal = A266A11D1E054AC4006ACF19 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A25BDBE51E0849FF009EA638;
+			remoteInfo = RubiParser;
+		};
+		A25BDC1A1E084BA0009EA638 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A266A11D1E054AC4006ACF19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A25BDC0F1E084BA0009EA638;
 			remoteInfo = RubiParser;
 		};
 		A266A1311E054AC4006ACF19 /* PBXContainerItemProxy */ = {
@@ -69,6 +90,8 @@
 		A22E3FFB1E0813DC00959FC7 /* RubiNodeEquatableTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RubiNodeEquatableTestCase.swift; sourceTree = "<group>"; };
 		A25BDBE61E0849FF009EA638 /* RubiParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RubiParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25BDBEE1E0849FF009EA638 /* RubiParser macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RubiParser macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A25BDC101E084BA0009EA638 /* RubiParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RubiParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A25BDC181E084BA0009EA638 /* RubiParser watchOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RubiParser watchOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A266A1261E054AC4006ACF19 /* RubiParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RubiParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A266A1291E054AC4006ACF19 /* RubiParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RubiParser.h; sourceTree = "<group>"; };
 		A266A12A1E054AC4006ACF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +117,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				A25BDBEF1E0849FF009EA638 /* RubiParser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25BDC0C1E084BA0009EA638 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25BDC151E084BA0009EA638 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A25BDC191E084BA0009EA638 /* RubiParser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +171,8 @@
 				A266A12F1E054AC4006ACF19 /* RubiParser iOS Tests.xctest */,
 				A25BDBE61E0849FF009EA638 /* RubiParser.framework */,
 				A25BDBEE1E0849FF009EA638 /* RubiParser macOS Tests.xctest */,
+				A25BDC101E084BA0009EA638 /* RubiParser.framework */,
+				A25BDC181E084BA0009EA638 /* RubiParser watchOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +215,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A25BDC001E084A85009EA638 /* RubiParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25BDC0D1E084BA0009EA638 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +270,42 @@
 			name = "RubiParser macOS Tests";
 			productName = RubiParserTests;
 			productReference = A25BDBEE1E0849FF009EA638 /* RubiParser macOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A25BDC0F1E084BA0009EA638 /* RubiParser watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A25BDC211E084BA0009EA638 /* Build configuration list for PBXNativeTarget "RubiParser watchOS" */;
+			buildPhases = (
+				A25BDC0B1E084BA0009EA638 /* Sources */,
+				A25BDC0C1E084BA0009EA638 /* Frameworks */,
+				A25BDC0D1E084BA0009EA638 /* Headers */,
+				A25BDC0E1E084BA0009EA638 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RubiParser watchOS";
+			productName = RubiParser;
+			productReference = A25BDC101E084BA0009EA638 /* RubiParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A25BDC171E084BA0009EA638 /* RubiParser watchOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A25BDC241E084BA0009EA638 /* Build configuration list for PBXNativeTarget "RubiParser watchOS Tests" */;
+			buildPhases = (
+				A25BDC141E084BA0009EA638 /* Sources */,
+				A25BDC151E084BA0009EA638 /* Frameworks */,
+				A25BDC161E084BA0009EA638 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A25BDC1B1E084BA0009EA638 /* PBXTargetDependency */,
+			);
+			name = "RubiParser watchOS Tests";
+			productName = RubiParserTests;
+			productReference = A25BDC181E084BA0009EA638 /* RubiParser watchOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		A266A1251E054AC4006ACF19 /* RubiParser iOS */ = {
@@ -281,6 +364,16 @@
 						DevelopmentTeam = 9JMJN53AU2;
 						ProvisioningStyle = Automatic;
 					};
+					A25BDC0F1E084BA0009EA638 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 9JMJN53AU2;
+						ProvisioningStyle = Automatic;
+					};
+					A25BDC171E084BA0009EA638 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 9JMJN53AU2;
+						ProvisioningStyle = Automatic;
+					};
 					A266A1251E054AC4006ACF19 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 9JMJN53AU2;
@@ -310,6 +403,8 @@
 				A266A12E1E054AC4006ACF19 /* RubiParser iOS Tests */,
 				A25BDBE51E0849FF009EA638 /* RubiParser macOS */,
 				A25BDBED1E0849FF009EA638 /* RubiParser macOS Tests */,
+				A25BDC0F1E084BA0009EA638 /* RubiParser watchOS */,
+				A25BDC171E084BA0009EA638 /* RubiParser watchOS Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -328,6 +423,22 @@
 			files = (
 				A25BDC031E084A9B009EA638 /* EasyNews1Full.html in Resources */,
 				A25BDC021E084A9B009EA638 /* EasyNews1.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25BDC0E1E084BA0009EA638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25BDC161E084BA0009EA638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A25BDC2C1E084BF6009EA638 /* EasyNews1Full.html in Resources */,
+				A25BDC2B1E084BF6009EA638 /* EasyNews1.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +486,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A25BDC0B1E084BA0009EA638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A25BDC291E084BDA009EA638 /* RubiNode.swift in Sources */,
+				A25BDC281E084BDA009EA638 /* RubiDocument.swift in Sources */,
+				A25BDC2A1E084BDA009EA638 /* RubiParser.swift in Sources */,
+				A25BDC271E084BDA009EA638 /* NSScanner+Swift.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25BDC141E084BA0009EA638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A25BDC331E084BF6009EA638 /* XCTestCaseExtension.swift in Sources */,
+				A25BDC321E084BF6009EA638 /* RubiParserTestCase.swift in Sources */,
+				A25BDC2D1E084BF6009EA638 /* RubiDocumentEquatableTestCase.swift in Sources */,
+				A25BDC2F1E084BF6009EA638 /* RubiDocumentTestCase.swift in Sources */,
+				A25BDC2E1E084BF6009EA638 /* RubiDocumentExtensionTestCase.swift in Sources */,
+				A25BDC311E084BF6009EA638 /* RubiParserExtensionTestCase.swift in Sources */,
+				A25BDC301E084BF6009EA638 /* RubiNodeEquatableTestCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A266A1211E054AC4006ACF19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,6 +543,11 @@
 			isa = PBXTargetDependency;
 			target = A25BDBE51E0849FF009EA638 /* RubiParser macOS */;
 			targetProxy = A25BDBF01E0849FF009EA638 /* PBXContainerItemProxy */;
+		};
+		A25BDC1B1E084BA0009EA638 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A25BDC0F1E084BA0009EA638 /* RubiParser watchOS */;
+			targetProxy = A25BDC1A1E084BA0009EA638 /* PBXContainerItemProxy */;
 		};
 		A266A1321E054AC4006ACF19 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -492,6 +633,70 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.empyrealnight.RubiParserTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A25BDC221E084BA0009EA638 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9JMJN53AU2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RubiParser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.empyrealnight.RubiParser;
+				PRODUCT_NAME = RubiParser;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A25BDC231E084BA0009EA638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9JMJN53AU2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RubiParser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.empyrealnight.RubiParser;
+				PRODUCT_NAME = RubiParser;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A25BDC251E084BA0009EA638 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9JMJN53AU2;
+				INFOPLIST_FILE = RubiParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.empyrealnight.RubiParserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A25BDC261E084BA0009EA638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9JMJN53AU2;
+				INFOPLIST_FILE = RubiParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.empyrealnight.RubiParserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -680,6 +885,22 @@
 			buildConfigurations = (
 				A25BDBFB1E0849FF009EA638 /* Debug */,
 				A25BDBFC1E0849FF009EA638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A25BDC211E084BA0009EA638 /* Build configuration list for PBXNativeTarget "RubiParser watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A25BDC221E084BA0009EA638 /* Debug */,
+				A25BDC231E084BA0009EA638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A25BDC241E084BA0009EA638 /* Build configuration list for PBXNativeTarget "RubiParser watchOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A25BDC251E084BA0009EA638 /* Debug */,
+				A25BDC261E084BA0009EA638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

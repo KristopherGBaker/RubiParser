@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A266A1251E054AC4006ACF19"
-               BuildableName = "RubiParser.framework"
-               BlueprintName = "RubiParser iOS"
+               BlueprintIdentifier = "A25BDC0F1E084BA0009EA638"
+               BuildableName = "RubiParser watchOS.framework"
+               BlueprintName = "RubiParser watchOS"
                ReferencedContainer = "container:RubiParser.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A266A12E1E054AC4006ACF19"
-               BuildableName = "RubiParser iOS Tests.xctest"
-               BlueprintName = "RubiParser iOS Tests"
+               BlueprintIdentifier = "A25BDC171E084BA0009EA638"
+               BuildableName = "RubiParser watchOS Tests.xctest"
+               BlueprintName = "RubiParser watchOS Tests"
                ReferencedContainer = "container:RubiParser.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A266A1251E054AC4006ACF19"
-            BuildableName = "RubiParser.framework"
-            BlueprintName = "RubiParser iOS"
+            BlueprintIdentifier = "A25BDC0F1E084BA0009EA638"
+            BuildableName = "RubiParser watchOS.framework"
+            BlueprintName = "RubiParser watchOS"
             ReferencedContainer = "container:RubiParser.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A266A1251E054AC4006ACF19"
-            BuildableName = "RubiParser.framework"
-            BlueprintName = "RubiParser iOS"
+            BlueprintIdentifier = "A25BDC0F1E084BA0009EA638"
+            BuildableName = "RubiParser watchOS.framework"
+            BlueprintName = "RubiParser watchOS"
             ReferencedContainer = "container:RubiParser.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A266A1251E054AC4006ACF19"
-            BuildableName = "RubiParser.framework"
-            BlueprintName = "RubiParser iOS"
+            BlueprintIdentifier = "A25BDC0F1E084BA0009EA638"
+            BuildableName = "RubiParser watchOS.framework"
+            BlueprintName = "RubiParser watchOS"
             ReferencedContainer = "container:RubiParser.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

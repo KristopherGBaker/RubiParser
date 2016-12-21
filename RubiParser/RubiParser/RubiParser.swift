@@ -6,6 +6,8 @@
 //  Copyright © 2016 Empyreal Night, LLC. All rights reserved.
 //
 
+import Foundation
+
 /// RubiParser represents a type for parsing input text to RubiDocument.
 public protocol RubiParser {
     
