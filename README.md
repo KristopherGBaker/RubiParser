@@ -1,6 +1,8 @@
 # RubiParser
 Swift [Ruby character](https://en.wikipedia.org/wiki/Ruby_character) parser for NHK Easy News flavored HTML.
 
+[![Build Status](https://travis-ci.org/KristopherGBaker/RubiParser.svg?branch=master)](https://travis-ci.org/KristopherGBaker/RubiParser)
+
 ## Installation
 
 ### CocoaPods
