@@ -99,7 +99,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A22E3FE71E056A4300959FC7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A22E3FE91E056BCA00959FC7 /* EasyNews1Full.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = EasyNews1Full.html; sourceTree = "<group>"; };
 		A22E3FED1E066EDA00959FC7 /* RubiDocumentTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RubiDocumentTestCase.swift; sourceTree = "<group>"; };
 		A22E3FEF1E066F2100959FC7 /* RubiParserTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RubiParserTestCase.swift; sourceTree = "<group>"; };
@@ -122,9 +121,11 @@
 		A266A1361E054AC4006ACF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A266A1401E054AE2006ACF19 /* RubiParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RubiParser.swift; sourceTree = "<group>"; };
 		A266A1421E054B83006ACF19 /* EasyNews1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = EasyNews1.html; sourceTree = "<group>"; };
-		A266A1441E054CE4006ACF19 /* RubiParser.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RubiParser.podspec; path = ../RubiParser.podspec; sourceTree = "<group>"; };
 		A266A1461E0551C4006ACF19 /* NSScanner+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSScanner+Swift.swift"; sourceTree = "<group>"; };
 		A266A1481E05599F006ACF19 /* XCTestCaseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtension.swift; sourceTree = "<group>"; };
+		A2B0C8001E0A81E0002A5AE7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A2B0C8011E0A81E0002A5AE7 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A2B0C8021E0A81EB002A5AE7 /* RubiParser.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RubiParser.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,8 +195,9 @@
 		A266A11C1E054AC4006ACF19 = {
 			isa = PBXGroup;
 			children = (
-				A22E3FE71E056A4300959FC7 /* README.md */,
-				A266A1441E054CE4006ACF19 /* RubiParser.podspec */,
+				A2B0C8011E0A81E0002A5AE7 /* LICENSE */,
+				A2B0C8001E0A81E0002A5AE7 /* README.md */,
+				A2B0C8021E0A81EB002A5AE7 /* RubiParser.podspec */,
 				A266A1281E054AC4006ACF19 /* RubiParser */,
 				A266A1331E054AC4006ACF19 /* RubiParserTests */,
 				A266A1271E054AC4006ACF19 /* Products */,
@@ -1094,6 +1096,7 @@
 				A25BDBF91E0849FF009EA638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A25BDBFA1E0849FF009EA638 /* Build configuration list for PBXNativeTarget "RubiParser macOS Tests" */ = {
 			isa = XCConfigurationList;
@@ -1102,6 +1105,7 @@
 				A25BDBFC1E0849FF009EA638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A25BDC211E084BA0009EA638 /* Build configuration list for PBXNativeTarget "RubiParser watchOS" */ = {
 			isa = XCConfigurationList;
@@ -1110,6 +1114,7 @@
 				A25BDC231E084BA0009EA638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A25BDC241E084BA0009EA638 /* Build configuration list for PBXNativeTarget "RubiParser watchOS Tests" */ = {
 			isa = XCConfigurationList;
@@ -1118,6 +1123,7 @@
 				A25BDC261E084BA0009EA638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A25BDC4A1E0A7BAC009EA638 /* Build configuration list for PBXNativeTarget "RubiParser tvOS" */ = {
 			isa = XCConfigurationList;
@@ -1126,6 +1132,7 @@
 				A25BDC4C1E0A7BAC009EA638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A25BDC4D1E0A7BAC009EA638 /* Build configuration list for PBXNativeTarget "RubiParser tvOS Tests" */ = {
 			isa = XCConfigurationList;
@@ -1134,6 +1141,7 @@
 				A25BDC4F1E0A7BAC009EA638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A266A1201E054AC4006ACF19 /* Build configuration list for PBXProject "RubiParser" */ = {
 			isa = XCConfigurationList;
