@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A25BDC381E0A7BAB009EA638"
-               BuildableName = "RubiParser tvOS.framework"
+               BuildableName = "RubiParser.framework"
                BlueprintName = "RubiParser tvOS"
                ReferencedContainer = "container:RubiParser.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A25BDC381E0A7BAB009EA638"
-            BuildableName = "RubiParser tvOS.framework"
+            BuildableName = "RubiParser.framework"
             BlueprintName = "RubiParser tvOS"
             ReferencedContainer = "container:RubiParser.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A25BDC381E0A7BAB009EA638"
-            BuildableName = "RubiParser tvOS.framework"
+            BuildableName = "RubiParser.framework"
             BlueprintName = "RubiParser tvOS"
             ReferencedContainer = "container:RubiParser.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A25BDC381E0A7BAB009EA638"
-            BuildableName = "RubiParser tvOS.framework"
+            BuildableName = "RubiParser.framework"
             BlueprintName = "RubiParser tvOS"
             ReferencedContainer = "container:RubiParser.xcodeproj">
          </BuildableReference>
