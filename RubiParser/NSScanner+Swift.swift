@@ -10,55 +10,56 @@
 import Foundation
 
 internal extension Scanner {
-    
+
     // MARK: Strings
-    
-    /// Returns a string, scanned as long as characters from a given character set are encountered, or `nil` if none are found.
+
+    /// Returns a string, scanned as long as characters from a given
+    /// character set are encountered, or `nil` if none are found.
     @discardableResult
     func scanCharacters(from set: CharacterSet) -> String? {
-        var value: NSString? = ""
-        if scanCharacters(from: set, into: &value),
-            let value = value as? String {
-            return value
+        var value: NSString?
+        if scanCharacters(from: set, into: &value) {
+            return value as String?
         }
         return nil
     }
-    
-    /// Returns a string, scanned until a character from a given character set are encountered, or the remainder of the scanner's string. Returns `nil` if the scanner is already `atEnd`.
+
+    /// Returns a string, scanned until a character from a given
+    /// character set are encountered, or the remainder of the
+    /// scanner's string. Returns `nil` if the scanner is already `atEnd`.
     @discardableResult
     func scanUpToCharacters(from set: CharacterSet) -> String? {
-        var value: NSString? = ""
-        if scanUpToCharacters(from: set, into: &value),
-            let value = value as? String {
-            return value
+        var value: NSString?
+        if scanUpToCharacters(from: set, into: &value) {
+            return value as String?
         }
         return nil
     }
-    
+
     /// Returns the given string if scanned, or `nil` if not found.
     @discardableResult
     func scanString(str: String) -> String? {
-        var value: NSString? = ""
-        if scanString(str, into: &value),
-            let value = value as? String {
-            return value
+        var value: NSString?
+        if scanString(str, into: &value) {
+            return value as String?
         }
         return nil
     }
-    
-    /// Returns a string, scanned until the given string is found, or the remainder of the scanner's string. Returns `nil` if the scanner is already `atEnd`.
+
+    /// Returns a string, scanned until the given string is found,
+    /// or the remainder of the scanner's string. Returns `nil` if
+    /// the scanner is already `atEnd`.
     @discardableResult
     func scanUpToString(str: String) -> String? {
-        var value: NSString? = ""
-        if scanUpTo(str, into: &value),
-            let value = value as? String {
-            return value
+        var value: NSString?
+        if scanUpTo(str, into: &value) {
+            return value as String?
         }
         return nil
     }
-    
+
     // MARK: Numbers
-    
+
     /// Returns a Double if scanned, or `nil` if not found.
     @discardableResult
     func scanDouble() -> Double? {
@@ -68,7 +69,7 @@ internal extension Scanner {
         }
         return nil
     }
-    
+
     /// Returns a Float if scanned, or `nil` if not found.
     @discardableResult
     func scanFloat() -> Float? {
@@ -78,7 +79,7 @@ internal extension Scanner {
         }
         return nil
     }
-    
+
     /// Returns an Int if scanned, or `nil` if not found.
     @discardableResult
     func scanInteger() -> Int? {
@@ -88,7 +89,7 @@ internal extension Scanner {
         }
         return nil
     }
-    
+
     /// Returns an Int32 if scanned, or `nil` if not found.
     @discardableResult
     func scanInt() -> Int32? {
@@ -98,7 +99,7 @@ internal extension Scanner {
         }
         return nil
     }
-    
+
     /// Returns an Int64 if scanned, or `nil` if not found.
     @discardableResult
     func scanLongLong() -> Int64? {
@@ -108,7 +109,7 @@ internal extension Scanner {
         }
         return nil
     }
-    
+
     /// Returns a UInt64 if scanned, or `nil` if not found.
     @discardableResult
     func scanUnsignedLongLong() -> UInt64? {
@@ -118,7 +119,7 @@ internal extension Scanner {
         }
         return nil
     }
-    
+
     /// Returns an NSDecimal if scanned, or `nil` if not found.
     @discardableResult
     func scanDecimal() -> Decimal? {
@@ -128,9 +129,9 @@ internal extension Scanner {
         }
         return nil
     }
-    
+
     // MARK: Hex Numbers
-    
+
     /// Returns a Double if scanned in hexadecimal, or `nil` if not found.
     @discardableResult
     func scanHexDouble() -> Double? {
@@ -140,7 +141,7 @@ internal extension Scanner {
         }
         return nil
     }
-    
+
     /// Returns a Float if scanned in hexadecimal, or `nil` if not found.
     @discardableResult
     func scanHexFloat() -> Float? {
@@ -150,7 +151,7 @@ internal extension Scanner {
         }
         return nil
     }
-    
+
     /// Returns a UInt32 if scanned in hexadecimal, or `nil` if not found.
     @discardableResult
     func scanHexInt() -> UInt32? {
@@ -160,7 +161,7 @@ internal extension Scanner {
         }
         return nil
     }
-    
+
     /// Returns a UInt64 if scanned in hexadecimal, or `nil` if not found.
     @discardableResult
     func scanHexLongLong() -> UInt64? {

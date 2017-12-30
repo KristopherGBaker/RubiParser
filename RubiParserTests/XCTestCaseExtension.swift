@@ -10,7 +10,7 @@ import XCTest
 
 /// XCTestCase extension methods.
 extension XCTestCase {
-    
+
     /**
      Loads the specified example from the current Bundle and returns the contents as a string.
      
@@ -23,13 +23,13 @@ extension XCTestCase {
      */
     func loadExample(name: String, ofType: String = "html") -> String? {
         let bundle = Bundle(for: type(of: self))
-        
+
         if let path = bundle.path(forResource: name, ofType: ofType),
             let text: String = try? String(contentsOfFile: path) {
             return text
         }
-        
+
         return nil
     }
-    
+
 }

@@ -6,127 +6,127 @@
 //  Copyright © 2016 Empyreal Night, LLC. All rights reserved.
 //
 
-import XCTest
 @testable import RubiParser
+import XCTest
 
 /// Tests the Equatable implementation on RubiNode.
 class RubiNodeEquatableTestCase: XCTestCase {
-    
-    /// Tests equality for RubiNode.Ruby.
+
+    /// Tests equality for RubiNode.ruby.
     func testRubyEqual() {
-        let tokyo = RubiNode.Ruby(kanji: "東京", reading: "とうきょう")
-        let tokyo2 = RubiNode.Ruby(kanji: "東京", reading: "とうきょう")
-        
+        let tokyo = RubiNode.ruby(kanji: "東京", reading: "とうきょう")
+        let tokyo2 = RubiNode.ruby(kanji: "東京", reading: "とうきょう")
+
         XCTAssert(tokyo == tokyo2)
     }
-    
-    /// Tests inequality for RubiNode.Ruby.
+
+    /// Tests inequality for RubiNode.ruby.
     func testRubyNotEqual() {
-        let tokyo = RubiNode.Ruby(kanji: "東京", reading: "とうきょう")
-        let kyoto = RubiNode.Ruby(kanji: "京都", reading: "きょうと")
-        
+        let tokyo = RubiNode.ruby(kanji: "東京", reading: "とうきょう")
+        let kyoto = RubiNode.ruby(kanji: "京都", reading: "きょうと")
+
         XCTAssert(tokyo != kyoto)
     }
-    
-    /// Tests equality for RubiNode.Word.
+
+    /// Tests equality for RubiNode.word.
     func testWordEqual() {
-        let arigatou = RubiNode.Word(text: "ありがとう")
-        let arigatou2 = RubiNode.Word(text: "ありがとう")
-        
+        let arigatou = RubiNode.word(text: "ありがとう")
+        let arigatou2 = RubiNode.word(text: "ありがとう")
+
         XCTAssert(arigatou == arigatou2)
     }
-    
-    /// Tests inequality for RubiNode.Word.
+
+    /// Tests inequality for RubiNode.word.
     func testWordNotEqual() {
-        let arigatou = RubiNode.Word(text: "ありがとう")
-        let konnichiwa = RubiNode.Word(text: "こんにちは")
-        
+        let arigatou = RubiNode.word(text: "ありがとう")
+        let konnichiwa = RubiNode.word(text: "こんにちは")
+
         XCTAssert(arigatou != konnichiwa)
     }
-    
-    /// Tests equality for RubiNode.Text.
+
+    /// Tests equality for RubiNode.text.
     func testTextEqual() {
-        let ga = RubiNode.Text(text: "が")
-        let ga2 = RubiNode.Text(text: "が")
-        
+        let ga = RubiNode.text(text: "が")
+        let ga2 = RubiNode.text(text: "が")
+
         XCTAssert(ga == ga2)
     }
-    
-    /// Tests inequality for RubiNode.Text.
+
+    /// Tests inequality for RubiNode.text.
     func testTextNotEqual() {
-        let ga = RubiNode.Text(text: "が")
-        let wo = RubiNode.Text(text: "を")
-        
+        let ga = RubiNode.text(text: "が")
+        let wo = RubiNode.text(text: "を")
+
         XCTAssert(ga != wo)
     }
-    
-    /// Tests equality for RubiNode.Paragraph.
+
+    /// Tests equality for RubiNode.paragraph.
     func testParagraphEqual() {
-        let tokyo = RubiNode.Ruby(kanji: "東京", reading: "とうきょう")
-        let paragraph = RubiNode.Paragraph(children: [tokyo])
-        
-        let tokyo2 = RubiNode.Ruby(kanji: "東京", reading: "とうきょう")
-        let paragraph2 = RubiNode.Paragraph(children: [tokyo2])
-        
+        let tokyo = RubiNode.ruby(kanji: "東京", reading: "とうきょう")
+        let paragraph = RubiNode.paragraph(children: [tokyo])
+
+        let tokyo2 = RubiNode.ruby(kanji: "東京", reading: "とうきょう")
+        let paragraph2 = RubiNode.paragraph(children: [tokyo2])
+
         XCTAssert(paragraph == paragraph2)
     }
-    
-    /// Tests inequality for RubiNode.Paragraph.
+
+    /// Tests inequality for RubiNode.paragraph.
     func testParagraphNotEqual() {
-        let tokyo = RubiNode.Ruby(kanji: "東京", reading: "とうきょう")
-        let paragraph = RubiNode.Paragraph(children: [tokyo])
-        
-        let kyoto = RubiNode.Ruby(kanji: "京都", reading: "きょうと")
-        let paragraph2 = RubiNode.Paragraph(children: [kyoto])
-        
+        let tokyo = RubiNode.ruby(kanji: "東京", reading: "とうきょう")
+        let paragraph = RubiNode.paragraph(children: [tokyo])
+
+        let kyoto = RubiNode.ruby(kanji: "京都", reading: "きょうと")
+        let paragraph2 = RubiNode.paragraph(children: [kyoto])
+
         XCTAssert(paragraph != paragraph2)
     }
-    
-    /// Tests inequality for RubiNode.Ruby and RubiNode.Word.
+
+    /// Tests inequality for RubiNode.ruby and RubiNode.word.
     func testRubyWordNotEqual() {
-        let tokyo = RubiNode.Ruby(kanji: "東京", reading: "とうきょう")
-        let tokyo2 = RubiNode.Word(text: "東京")
-        
+        let tokyo = RubiNode.ruby(kanji: "東京", reading: "とうきょう")
+        let tokyo2 = RubiNode.word(text: "東京")
+
         XCTAssert(tokyo != tokyo2)
     }
-    
-    /// Tests inequality for RubiNode.Ruby and RubiNode.Text.
+
+    /// Tests inequality for RubiNode.ruby and RubiNode.text.
     func testRubyTextNotEqual() {
-        let tokyo = RubiNode.Ruby(kanji: "東京", reading: "とうきょう")
-        let tokyo2 = RubiNode.Text(text: "東京")
-        
+        let tokyo = RubiNode.ruby(kanji: "東京", reading: "とうきょう")
+        let tokyo2 = RubiNode.text(text: "東京")
+
         XCTAssert(tokyo != tokyo2)
     }
-    
-    /// Tests inequality for RubiNode.Ruby and RubiNode.Paragraph.
+
+    /// Tests inequality for RubiNode.ruby and RubiNode.paragraph.
     func testRubyParagraphNotEqual() {
-        let tokyo = RubiNode.Ruby(kanji: "東京", reading: "とうきょう")
-        let paragraph = RubiNode.Paragraph(children: [tokyo])
-        
+        let tokyo = RubiNode.ruby(kanji: "東京", reading: "とうきょう")
+        let paragraph = RubiNode.paragraph(children: [tokyo])
+
         XCTAssert(tokyo != paragraph)
     }
-    
-    /// Tests inequality for RubiNode.Word and RubiNode.Text.
+
+    /// Tests inequality for RubiNode.word and RubiNode.text.
     func testWordTextNotEqual() {
-        let tokyo = RubiNode.Word(text: "東京")
-        let tokyo2 = RubiNode.Text(text: "東京")
-        
+        let tokyo = RubiNode.word(text: "東京")
+        let tokyo2 = RubiNode.text(text: "東京")
+
         XCTAssert(tokyo != tokyo2)
     }
-    
-    /// Tests inequality for RubiNode.Word and RubiNode.Paragraph.
+
+    /// Tests inequality for RubiNode.word and RubiNode.paragraph.
     func testWordParagraphNotEqual() {
-        let tokyo = RubiNode.Word(text: "東京")
-        let paragraph = RubiNode.Paragraph(children: [tokyo])
-        
+        let tokyo = RubiNode.word(text: "東京")
+        let paragraph = RubiNode.paragraph(children: [tokyo])
+
         XCTAssert(tokyo != paragraph)
     }
-    
-    /// Tests inequality for RubiNode.Word and RubiNode.Text.
+
+    /// Tests inequality for RubiNode.word and RubiNode.text.
     func testTextParagraphNotEqual() {
-        let tokyo = RubiNode.Text(text: "東京")
-        let paragraph = RubiNode.Paragraph(children: [tokyo])
-        
+        let tokyo = RubiNode.text(text: "東京")
+        let paragraph = RubiNode.paragraph(children: [tokyo])
+
         XCTAssert(tokyo != paragraph)
     }
 }
