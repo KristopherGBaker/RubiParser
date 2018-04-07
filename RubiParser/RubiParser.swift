@@ -33,9 +33,9 @@ public extension RubiParser {
     ///    A RubiDocument representing the input html.
     public func parseEasyNewsArticle(html: String) -> RubiDocument {
         let scanner = Scanner(string: html)
-        let divTag = "<div id=\"newsarticle\">"
-        scanner.scanUpToString(str: divTag)
-        scanner.scanString(str: divTag)
+        let articleBody = "id=\"js-article-body\">"
+        scanner.scanUpToString(str: articleBody)
+        scanner.scanString(str: articleBody)
 
         if let articleHTML = scanner.scanUpToString(str: "</div>") {
             return parse(articleHTML)
@@ -75,7 +75,7 @@ public class RubiScannerParser: RubiParser {
         var done = false
 
         while !done {
-            scanner.scanCharacters(from: CharacterSet.whitespacesAndNewlines)
+            scanner.scanCharacters(from: .whitespacesAndNewlines)
 
             if scanner.scanString(str: "<p>") != nil {
                 scanParagraph()
@@ -102,7 +102,7 @@ public class RubiScannerParser: RubiParser {
 
     /// Scans the remainder of a paragraph node.
     private func scanParagraph() {
-        scanner.scanCharacters(from: CharacterSet.whitespacesAndNewlines)
+        scanner.scanCharacters(from: .whitespacesAndNewlines)
         nodeStack.append(.paragraph(children: []))
     }
 
@@ -113,7 +113,7 @@ public class RubiScannerParser: RubiParser {
 
         if let text = scanner.scanUpToCharacters(from: whitespaceLessThan) {
             nodeStack.append(.word(text: text))
-            scanner.scanCharacters(from: CharacterSet.whitespacesAndNewlines)
+            scanner.scanCharacters(from: .whitespacesAndNewlines)
         }
 
         scanner.scanString(str: "</span>")
@@ -121,7 +121,7 @@ public class RubiScannerParser: RubiParser {
 
     /// Scans the remainder of the image tag into an image node.
     private func scanImage() {
-        scanner.scanCharacters(from: CharacterSet.whitespacesAndNewlines)
+        scanner.scanCharacters(from: .whitespacesAndNewlines)
         scanner.scanUpToString(str: "src=\"")
         scanner.scanString(str: "src=\"")
 
@@ -138,7 +138,7 @@ public class RubiScannerParser: RubiParser {
         var kanji: String?
         var reading: String?
 
-        scanner.scanCharacters(from: CharacterSet.whitespacesAndNewlines)
+        scanner.scanCharacters(from: .whitespacesAndNewlines)
 
         if scanner.scanString(str: "<span") != nil {
             kanji = scanRubySpan()
@@ -147,7 +147,7 @@ public class RubiScannerParser: RubiParser {
             scanner.scanCharacters(from: CharacterSet.whitespacesAndNewlines)
         }
 
-        scanner.scanCharacters(from: CharacterSet.whitespacesAndNewlines)
+        scanner.scanCharacters(from: .whitespacesAndNewlines)
 
         if scanner.scanString(str: "<rt>") != nil {
             reading = scanReading()
@@ -164,12 +164,12 @@ public class RubiScannerParser: RubiParser {
 
     /// Scans the reading for a ruby node.
     private func scanReading() -> String? {
-        scanner.scanCharacters(from: CharacterSet.whitespacesAndNewlines)
+        scanner.scanCharacters(from: .whitespacesAndNewlines)
         var reading: String?
 
         if let text = scanner.scanUpToCharacters(from: whitespaceLessThan) {
             reading = text
-            scanner.scanCharacters(from: CharacterSet.whitespacesAndNewlines)
+            scanner.scanCharacters(from: .whitespacesAndNewlines)
         }
 
         scanner.scanString(str: "</rt>")
@@ -185,7 +185,7 @@ public class RubiScannerParser: RubiParser {
 
         if let text = scanner.scanUpToCharacters(from: whitespaceLessThan) {
             kanji = text
-            scanner.scanCharacters(from: CharacterSet.whitespacesAndNewlines)
+            scanner.scanCharacters(from: .whitespacesAndNewlines)
         }
 
         scanner.scanString(str: "</span>")
@@ -221,7 +221,7 @@ public class RubiScannerParser: RubiParser {
     /// Scans text into a text node.
     private func scanText(text: String) {
         nodeStack.append(.text(text: text))
-        scanner.scanCharacters(from: CharacterSet.whitespacesAndNewlines)
+        scanner.scanCharacters(from: .whitespacesAndNewlines)
     }
 
     /// Scans html tags that we don't care about.

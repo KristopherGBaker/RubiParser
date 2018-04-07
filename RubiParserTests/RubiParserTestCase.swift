@@ -72,13 +72,13 @@ class RubiParserTestCase: XCTestCase {
 
     /// Asserts the parsed EasyNews1 document is correct.
     func assertEasyNews1() {
-        XCTAssert(doc.items.count == 6)
+        XCTAssertEqual(doc.items.count, 6)
 
         if case RubiNode.paragraph(children: let children) = doc.items[0] {
-            XCTAssert(children.count == 15)
+            XCTAssert(children.count == 33)
 
-            if case RubiNode.word(text: let word) = children[0] {
-                XCTAssert(word == "スウェーデン")
+            if case RubiNode.text(text: let text) = children[0] {
+                XCTAssert(text == "アメリカ")
             } else {
                 XCTFail("unexpected items")
             }
@@ -87,11 +87,11 @@ class RubiParserTestCase: XCTestCase {
         }
 
         if case RubiNode.paragraph(children: let children) = doc.items[3] {
-            XCTAssert(children.count == 32)
+            XCTAssert(children.count == 25)
 
             if case RubiNode.ruby(kanji: let kanji, reading: let reading) = children[0] {
-                XCTAssert(kanji == "今年")
-                XCTAssert(reading == "ことし")
+                XCTAssert(kanji == "東京都")
+                XCTAssert(reading == "とうきょうと")
             } else {
                 XCTFail("unexpected items")
             }
